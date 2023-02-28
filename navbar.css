@@ -1,0 +1,122 @@
+/* DESKTOP */
+@media (min-width: 1024px) {
+    #list-navbar{
+      gap: 4px;
+    }
+    .navbar-nav li a {
+      color: #f8f9fa;
+    }
+    .nav-link:focus, .nav-link:hover {
+      color: #f8f9fa;  
+    }
+    .logo-bn-mobile{
+      display: none;
+    }
+  }
+  
+  
+  /* TABLET */
+  @media (max-width: 968px) {
+    .navbar-nav li a{
+      color: #000000;
+    }
+  
+    #list-navbar{
+      gap: 0px;
+      margin-top: 1 0px;
+    }
+
+    .logo-bn-desktop{
+      display: none;
+    }
+  }
+  
+  /* MOBIILE */
+  @media (min-width: 768px) {
+
+  }
+  
+  @media (max-width: 767px) {
+   
+    
+  }
+
+  .navbar-toggler span {
+    display: block;
+    background-color: #fcfcfc;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(2) {
+    opacity: 1;
+  }
+  
+  .navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+  }
+  
+  .navbar-nav .nav-item.active .nav-link,
+  .navbar-nav .nav-item:hover .nav-link {
+    color: #000000;
+    border-radius: 2px;
+  }
+
+  #judul-nav { 
+    display: inline-block;
+    position: relative;
+    font-family: Gotham-Medium; 
+    font-size: 14px; 
+    text-transform: uppercase;
+  }
+  
+  #judul-nav:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  #judul-nav:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  #judul-nav:hover {
+    color: #f8f9fa;
+    font-weight: 700;
+  }
+  

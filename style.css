@@ -1,0 +1,238 @@
+body {
+  background-color: #f8f9fa;
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(253, 253, 253);
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .offcanvas {
+    visibility: visible;
+    position: relative;
+    background: none;
+    border: none;
+    justify-content: end;
+  }
+
+  #kanan-headline {
+    padding: 0px;
+  }
+
+  .program-nav {       
+    display: none;
+    visibility: hidden;
+  }
+
+  #form-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .sosmed-nav {
+    display: none;
+    visibility: hidden;
+  }
+
+  .konten-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .play {
+    visibility: hidden;
+  }
+
+}
+
+
+/* TABLET */
+@media (max-width: 968px) {
+  .offcanvas {
+    width: 450px !important;
+  }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.25s ease-out;
+  }
+
+  .navbar-nav li a{
+    color: #000000;
+  }
+
+  #list-navbar{
+    gap: 0px;
+    margin-top: 1 0px;
+  }
+  #citizen {
+    width: 550px;
+  }
+
+  .play {
+    visibility: hidden;
+  }
+
+  #form-web {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+/* MOBIILE */
+@media (min-width: 768px) {
+  .konten-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  #mobile-categories {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .play {
+    visibility: hidden;
+  }
+
+  .offcanvas {
+    width: 290px !important;
+  }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.25s ease-out;
+  }
+  
+  #konten-search {
+    margin-top: 90px;
+  }
+
+  #section-kanan{
+    margin-top: 20px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .offcanvas {
+    width: 300px !important;
+  }
+}
+
+@font-face {
+  font-family: Gotham-Black;
+  src: url(font/Gotham-Black.otf);
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(font/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url(font/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(font/GothamBook.ttf);
+}
+
+.hover-mask a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-mask img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-mask a span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 15% 100px;
+  text-align: center;
+  background-color: rgb(16, 49, 126, 0.6);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.hover-mask:hover a span {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+
+#btn-insta {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet);
+  --bs-btn-border-color: var(--bd-violet);
+  --bs-btn-border-radius: 0.5rem;
+
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+#carousel-container,
+#newsticker,
+#container2 {
+  -webkit-animation: fadeInLeft 1s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-70px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+  }
+}
+
+#container2 {
+  -webkit-animation: fadeIntop 1.5s both;
+}
+
+@-webkit-keyframes fadeIntop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(90px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper-data-saham{
+    background-color:#eeeeee; 
+  }
+  
+  .saham-data-sticky{
+    padding-right: 30px;
+    line-height: 1px;
+  }
+
+  .owl-sticky{
+    display: none;
+    visibility: hidden;
+  }
+
+  .wrapper-data-saham .owl-nav{
+    display: none;
+  }
+
+  #home-tab-pane .owl-nav{
+    display: none;
+  }
